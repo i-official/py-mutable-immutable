@@ -22,10 +22,10 @@ variables_to_check = [
     "marks", "collection_of_coins",
 ]
 
-sorted_variables = {"mutable": [],"immutable": []}
+sorted_variables = {"mutable": [], "immutable": []}
 for var_name in variables_to_check:
     value = globals()[var_name]
-    if isinstance(value, list) or isinstance(value, dict) or isinstance(value, set):
+    if isinstance(value, (list, dict, set)):
         sorted_variables["mutable"].append(value)
     else:
         sorted_variables["immutable"].append(value)
