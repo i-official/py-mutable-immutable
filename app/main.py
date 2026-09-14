@@ -17,18 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 variables_to_check = ["lucky_number", "pi",
-                      "one_is_a_prime_number",
-                      "name", "my_favourite_films",
-                      "profile_info", "marks",
-                      "collection_of_coins"]
+"one_is_a_prime_number",
+"name", "my_favourite_films",
+"profile_info", "marks",
+"collection_of_coins"]
 
 sorted_variables = {
-    "mutable":[],
-    "immutable":[]
+    "mutable": [],
+    "immutable": []
 }
 
-for var_name  in variables_to_check:
-    value = globals()[var_name ]
+for var_name in variables_to_check:
+    value = globals()[var_name]
     if isinstance(value, list) or isinstance(value, dict) or isinstance(value, set):
         sorted_variables["mutable"].append(value)
     else:
