@@ -16,11 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variables_to_check = ["lucky_number", "pi",
-"one_is_a_prime_number",
-"name", "my_favourite_films",
-"profile_info", "marks",
-"collection_of_coins"]
+variables_to_check = [
+    "lucky_number", "pi", "one_is_a_prime_number",
+    "name", "my_favourite_films", "profile_info",
+    "marks", "collection_of_coins",
+]
+
 
 sorted_variables = {
     "mutable": [],
