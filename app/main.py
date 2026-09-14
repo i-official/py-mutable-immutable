@@ -29,4 +29,3 @@ for var_name in variables_to_check:
         sorted_variables["mutable"].append(value)
     else:
         sorted_variables["immutable"].append(value)
-
