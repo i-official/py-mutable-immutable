@@ -22,7 +22,6 @@ variables_to_check = [
     "marks", "collection_of_coins",
 ]
 
-
 sorted_variables = {
     "mutable": [],
     "immutable": []
