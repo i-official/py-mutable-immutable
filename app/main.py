@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variables_to_check = ['lucky_number', 'pi', 'one_is_a_prime_number', 'name', 'my_favourite_films', 'profile_info', 'marks', 'collection_of_coins']
+
+sorted_variables = {
+    "mutable":[],
+    "immutable":[]
+}
+
+for variable in variables_to_check:
+    value = globals()[variable]
+    #print(f"Змінна: {variable} - Значення: {value} -- Тип: {type(value)}")
+    if type(value) == list or type(value) == dict or type(value) == set:
+        sorted_variables["mutable"].append(value)
+    else:
+        sorted_variables["immutable"].append(value)
